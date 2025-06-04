@@ -167,18 +167,28 @@ body{
     gap: 20px;
     font-family: "Sour Gummy", serif;
 }
-.container button{
-background-color: #e3c9e9;
-height: 90px;
-width: 95px;
-border-radius: 10px;
-color: rgb(255, 255, 255);
-border-color: #add8e6;
-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.329);
-font-family: "Sour Gummy", serif;
-
-font-size: 20px;
+.container button {
+    background-color: #e6d0f7; /* soft lavender */
+    height: 90px;
+    width: 95px;
+    border-radius: 12px;
+    color: white;
+    border: 2px solid #c2a4e4;
+    box-shadow: 4px 6px 0 #bbb6cc;
+    font-family: "Sour Gummy", cursive;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
 }
+
+/* Optional: make them dance a little on hover */
+.container button:hover {
+    background-color: #f0dbff;
+    transform: translateY(-3px);
+    box-shadow: 6px 8px 0 #aaa0c6;
+}
+
 button:hover{
     cursor: pointer;
 }
@@ -188,3 +198,36 @@ footer{
     color: rgb(0, 0, 0);
     font-size: 13px;
 }
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.control-buttons button {
+    font-family: 'Sour Gummy', cursive;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    background-color: #e6d0f7; /* soft lavender */
+    color: white;
+    border: 2px solid #c2a4e4;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 4px 6px 0 #bbb6cc;
+    transition: all 0.2s ease;
+}
+
+.control-buttons button:hover {
+    background-color: #f0dbff;
+    transform: translateY(-3px);
+    box-shadow: 6px 8px 0 #aaa0c6;
+}
+
